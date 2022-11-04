@@ -1,0 +1,4 @@
+User-Agent: *
+User-Agent: Googlebot
+Allow: /
+Sitemap: https://www.ujjivansfb.in/sitemap.xml
