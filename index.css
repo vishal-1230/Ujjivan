@@ -15995,3 +15995,49 @@ hr {
     background: #229e82;
     border: 2px solid #f58f41
 }
+
+.signup-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50p 60px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.signup-form div{
+    padding: 80px 70px;
+}
+
+.signup-input{
+    padding: 8px 8px;
+    border-radius: 8px;
+    width: 300px;
+    border: #aaa 0.1px solid;
+    margin-bottom: 20px;
+}
+
+.signup-form button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 18px;
+    font-size: 15px;
+    color: black;
+    border: #000 1px solid;
+    border-radius: 4px;
+}
+
+.signup-form h1{
+    color: black;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-form label{
+    color: black;
+    font-size: 20px;
+}

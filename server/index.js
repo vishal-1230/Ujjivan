@@ -2,8 +2,9 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import mongoose from 'mongoose'
-import user from './user'
+import user from './user.js'
 import { initializeApp } from "firebase/app";
+import twilio from 'twilio'
 
 const app=express()
 
@@ -13,8 +14,13 @@ app.use(cors({
     origin: 'http://localhost:5500/'
 }))
 dotenv.config()
-mongoose.connect(process.env.MONGO, (err)=>{if (err) throw err; console.log('DB Connected')})
-mongoose.connection
+
+const accountSid = 'AC6a9789adbf0fe218e0551cedf493ed46';
+const authToken = 'fa1f39bebf1fdba4546ea0c9422cd428';
+const client = twilio(accountSid, authToken)
+
+mongoose.connect('mongodb+srv://vishal:Cluster2004@cluster0.btbmdim.mongodb.net/CryptoBot?retryWrites=true&w=majority', (err)=>console.log('connected'))
+const db=mongoose.connection
 
 const port = process.env.PORT || 8080
 
@@ -35,9 +41,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app2 = initializeApp(firebaseConfig);
 
-app.post('/signup', (req, res)=>{
-    user.create({user: req.body.user, name: req.body.name, phone: req.body.phone, email: req.body.email, approved: false, paymentMade:false})
+// app.post('/signup', (req, res)=>{
+//     user.create({user: req.body.user, name: req.body.name, phone: req.body.phone, email: req.body.email, approved: false, paymentMade:false})
+// })
+
+app.get('/signup', (req, res)=>{
+    console.log('Creating User');
+    user.create({name: req.query.name, phone: req.query.phone, email: req.query.email, approved: false, paymentMade:false})
+    const otp=Math.floor(Math.random()*10000)
+    client.messages.create({body: `Your OTP for Jana SFB Verification is ${otp}`, from: '+16205510762', to: '+918373958829'})
+    console.log('Sending OTP')
+    res.json(otp)
 })
+
+console.log()
 
 app.get('/isApproved', (req, res)=>{
     const username=req.query.user
@@ -55,7 +72,16 @@ app.post('/login', (req, res)=>{
 })
 
 app.get('/getPaymentStatus', (req, res)=>{
-    
+
 })
 
+
+
 app.listen(port)
+
+
+
+
+// twilio sid AC6a9789adbf0fe218e0551cedf493ed46
+// auth token fa1f39bebf1fdba4546ea0c9422cd428
+// num  +16205510762
