@@ -4,6 +4,8 @@ const userSchema = mongoose.Schema({
     name: String,
     phone: Number,
     email: String,
+    user:String,
+    pswd:String,
     approved:{
         type: Boolean,
         default: false
