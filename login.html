@@ -5,14 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body style="background-color: #ddd;">
     <script>
-
+        function onSubmit(){
+            alert('yo')
+            const user=document.getElementById('user').value
+            const pswd=dowcument.getElementById('pswd').value
+            async function trial(){
+                const response=await fetch(`http://192.168.0.3:8080/isApproved?user=${user}&pswd=${pswd}`)
+                alert('l')
+                const data=await response.json()
+                console.log(data);
+                if (data=='0'){
+                    alert('Your Application is Under Process')
+                }else if (data=='2'){
+                    alert('Wrong Password')
+                }else{
+                    window.location.href('http://localhost:3000/loggedInArea.html')
+                }
+            }
+            trial()
+        }
     </script>
     <div class="signup-form">
-        <label for="">Username</label><br>
-        <input type="text" class="signup-input">
+        <div>
+            <h1>LOGIN</h1>
+            <label for="">Username</label><br>
+            <input type="text" id="user" class="signup-input"><br><br>
+            <label for="">Password</label><br>
+            <input type="password" name="pswd" class="signup-input" id="pswd"><br><br>
+            <button>LOGIN</button>
+        </div>
     </div>
 </body>
 </html>
