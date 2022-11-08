@@ -8,36 +8,16 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body style="background-color: #ddd;">
-    <script>
-        function onSubmit(){
-            alert('yo')
-            const user=document.getElementById('user').value
-            const pswd=dowcument.getElementById('pswd').value
-            async function trial(){
-                const response=await fetch(`http://192.168.0.3:8080/isApproved?user=${user}&pswd=${pswd}`)
-                alert('l')
-                const data=await response.json()
-                console.log(data);
-                if (data=='0'){
-                    alert('Your Application is Under Process')
-                }else if (data=='2'){
-                    alert('Wrong Password')
-                }else{
-                    window.location.href('http://localhost:3000/loggedInArea.html')
-                }
-            }
-            trial()
-        }
-    </script>
-    <div class="signup-form">
+    
+    <form action="http://localhost:8080/isApproved" method="post" class="signup-form">
         <div>
             <h1>LOGIN</h1>
             <label for="">Username</label><br>
-            <input type="text" id="user" class="signup-input"><br><br>
+            <input type="text" id="user" name="user" class="signup-input"><br><br>
             <label for="">Password</label><br>
             <input type="password" name="pswd" class="signup-input" id="pswd"><br><br>
             <button>LOGIN</button>
         </div>
-    </div>
+    </form>
 </body>
 </html>

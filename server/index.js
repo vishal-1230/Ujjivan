@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import cors from 'cors'
 import mongoose from 'mongoose'
+import approved from './approved.js'
 import user from './user.js'
 import { initializeApp } from "firebase/app";
 import twilio from 'twilio'
@@ -56,25 +57,27 @@ app.get('/signup', (req, res)=>{
 
 console.log()
 
-app.get('/isApproved', (req, res)=>{
-    const user=req.query.user
-    const pswd=req.query.pswd
+app.post('/isApproved', (req, res)=>{
+    const user=req.body.user
+    console.log(user);
+    const pswd=req.body.pswd
     approved.find({user:user}, (err, data)=>{
         if (err) throw err;
+        console.log(data);
         if (data.length==0){
-            res.json('0')
+            res.send("<script>document.alert('hee')</script>")
         }else{
             if (data[0].pswd==pswd){
-                res.json('1')
+                res.redirect('http://localhost:5500/business-loan.html')
             }else{
-                res.json('2')
+            res.send("<script>document.alert('hee')</script>")
             }
         }
     })
 })
 
 app.post('/login', (req, res)=>{
-    res.redirect('http://localhost:3000')
+    res.redirect('http://localhost:5500')
 })
 
 app.get('/getPaymentStatus', (req, res)=>{
