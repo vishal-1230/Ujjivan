@@ -5576,7 +5576,7 @@ body {
 }
 
 .dark-green {
-    color: #056262
+    color: #db137b
 }
 
 .theme-color {
@@ -5672,7 +5672,7 @@ body {
 }
 
 .click-text {
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProBold"
 }
 
@@ -5903,7 +5903,7 @@ strong,
 
 .heading04 {
     font-size: 22px;
-    color: #056262
+    color: #db137b
 }
 
 @media only screen and (max-width: 1500px) {
@@ -6752,7 +6752,7 @@ sup {
     right: 0;
     top: 0;
     bottom: 0;
-    background: #056262;
+    background: #db137b;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -7107,7 +7107,7 @@ sup {
 }
 
 .cust-test-section .testi-wrap .test-inner-box .testi-box figcaption .read-more {
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProBold";
     font-size: 16px;
     margin-top: 25px;
@@ -7137,7 +7137,7 @@ sup {
 }
 
 .testi-box figcaption .read-more {
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProBold";
     font-size: 16px;
     margin-top: 25px;
@@ -7358,7 +7358,7 @@ sup {
 }
 
 .about-section .abt-right-box .about-btn-box a .left-curev-box:before {
-    background: #056262
+    background: #db137b
 }
 
 .about-section .abt-right-box .about-btn-box a:first-child {
@@ -7398,7 +7398,7 @@ sup {
 }
 
 .ticker-box p a {
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProBold";
     display: inline-block;
     margin-left: 5px
@@ -8430,7 +8430,7 @@ sup {
 }
 
 .acount-wrapper .ac-right-box .know-more a {
-    color: #056262;
+    color: #db137b;
     font-size: 16px;
     font-family: "MyriadProBold"
 }
@@ -8696,7 +8696,7 @@ sup {
     -ms-border-radius: 100%;
     -o-border-radius: 100%;
     border-radius: 100%;
-    border: solid 3px #056262;
+    border: solid 3px #db137b;
     position: relative;
     display: inline-block;
     vertical-align: middle
@@ -8758,7 +8758,7 @@ sup {
     width: -ms-calc(100% - 34px);
     width: calc(100% - 34px);
     padding-left: 20px;
-    color: #056262;
+    color: #db137b;
     font-size: 32px;
     font-family: "MyriadProLight"
 }
@@ -10078,7 +10078,7 @@ sup {
 }
 
 .sitemap-container .sitemap-row .sitemap-box .sub-acount-heading {
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProLight";
     font-size: 20px;
     padding-left: 40px;
@@ -10148,7 +10148,7 @@ sup {
 
 .custom-select {
     position: relative;
-    border: solid 1px #056262;
+    border: solid 1px #db137b;
     width: -webkit-calc(33.33% - 19px);
     width: -moz-calc(33.33% - 19px);
     width: -ms-calc(33.33% - 19px);
@@ -10190,7 +10190,7 @@ sup {
 }
 
 .news-tab ul {
-    border-bottom: solid 1px #056262
+    border-bottom: solid 1px #db137b
 }
 
 .news-tab ul li {
@@ -10239,12 +10239,12 @@ sup {
 }
 
 .news-tab ul li.active {
-    background: #056262
+    background: #db137b
 }
 
 .news-tab ul li.active .left-curev-box,
 .news-tab ul li.active .right-curev-box {
-    background: #056262
+    background: #db137b
 }
 
 .news-tab ul li .right-curev-box {
@@ -10313,7 +10313,7 @@ sup {
 }
 
 .gallery-box ul li:hover {
-    border-color: #056262
+    border-color: #db137b
 }
 
 .gallery-box ul li img {
@@ -10345,7 +10345,7 @@ sup {
     display: none;
     text-align: center;
     font-size: 24px;
-    color: #056262;
+    color: #db137b;
     font-family: "MyriadProBold"
 }
 
@@ -11263,7 +11263,7 @@ sup {
 
 .faq-section .faq-box {
     margin-top: 15px;
-    border: 1px solid #056262;
+    border: 1px solid #db137b;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -11510,7 +11510,7 @@ sup {
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
 .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-    background-color: #056262
+    background-color: #db137b
 }
 
 .mCSB_scrollTools .mCSB_draggerRail {
@@ -11868,7 +11868,7 @@ sup {
 .locator-map-section .locator-icon {
     width: 50px;
     font-size: 36px;
-    color: #056262
+    color: #db137b
 }
 
 @media only screen and (max-width: 1023px) {
@@ -11904,7 +11904,7 @@ sup {
 
 .helpline-no {
     font-size: 22px;
-    color: #056262;
+    color: #db137b;
     text-align: right;
     margin: 25px 0
 }
@@ -12128,7 +12128,7 @@ sup {
     border-radius: 100%;
     text-align: center;
     line-height: 28px;
-    color: #056262
+    color: #db137b
 }
 
 .mob-login-popup.mob-locateus-popup,
@@ -12159,7 +12159,7 @@ sup {
 .mob-locateus-popup.download-popup p,
 .download-popup.download-popup p,
 .thankyou-popup.download-popup p {
-    color: #056262;
+    color: #db137b;
     font-size: 18px
 }
 
@@ -12182,7 +12182,7 @@ sup {
 }
 
 .download-section .download-box figcaption {
-    background: #056262;
+    background: #db137b;
     padding: 15px;
     text-align: center
 }
@@ -13001,18 +13001,18 @@ sup {
 
 .filters .search-dropdown-content .search-wrap input {
     height: 40px;
-    border: 1px solid #056262;
+    border: 1px solid #db137b;
     padding-left: 10px
 }
 
 .filters .search-dropdown-content .search-wrap .search-btn {
     height: 40px;
-    background: #056262;
+    background: #db137b;
     color: #fff;
     font-size: 12px;
     line-height: 12px;
     box-shadow: none;
-    border: 1px solid #056262;
+    border: 1px solid #db137b;
     padding-left: 15px;
     padding-right: 15px
 }
@@ -13074,13 +13074,13 @@ sup {
     display: block;
     font-size: 14px;
     line-height: 14px;
-    color: #056262
+    color: #db137b
 }
 
 .filters .filter-list .dropdown .dropbtn {
     font-size: 20px;
     line-height: 20px;
-    color: #056262;
+    color: #db137b;
     display: flex
 }
 
@@ -13105,7 +13105,7 @@ sup {
 
 .filters .filter-list .dropdown .dropbtn i {
     transition: all 0.4s ease;
-    color: #056262
+    color: #db137b
 }
 
 .filters .filter-list .dropdown:hover {
@@ -13270,7 +13270,7 @@ sup {
     display: inline-block;
     text-decoration: none;
     padding: 5px 10px;
-    color: #056262
+    color: #db137b
 }
 
 .videos-pagination #pagination li a {
@@ -13291,7 +13291,7 @@ sup {
     font-size: 17px;
     line-height: 17px;
     display: flex;
-    color: #056262;
+    color: #db137b;
     padding-bottom: 8px
 }
 
@@ -13645,7 +13645,7 @@ sup {
     position: absolute;
     height: 18px;
     width: 18px;
-    border: solid 2px #056262;
+    border: solid 2px #db137b;
     border-radius: 50%;
     background: #fec852;
     border-radius: 100%;
@@ -14174,7 +14174,7 @@ hr {
 }
 
 .header .top-header {
-    background: #056262;
+    background: #db137b;
     padding: 0 20px;
     position: relative
 }
@@ -14342,7 +14342,7 @@ hr {
 }
 
 .header .main-header .main-menu ul li a {
-    color: #056262;
+    color: #db137b;
     font-size: 16px;
     display: inline-block;
     vertical-align: middle
@@ -14359,7 +14359,7 @@ hr {
     vertical-align: middle;
     margin-left: 5px;
     font-size: 22px;
-    color: #056262
+    color: #db137b
 }
 
 @media only screen and (max-width: 1500px) {
@@ -14457,10 +14457,10 @@ hr {
 }
 
 .header .header-submenu {
-    background: #056262;
+    background: #db137b;
     padding: 45px;
     display: none;
-    background: #056262;
+    background: #db137b;
     padding: 45px;
     position: fixed;
     display: none;
@@ -14487,7 +14487,7 @@ hr {
 
 .header .header-submenu .left-curev-box,
 .header .header-submenu .right-curev-box {
-    background: #056262
+    background: #db137b
 }
 
 .header .header-submenu .heading03 {
@@ -14755,7 +14755,7 @@ hr {
 
 .header.mob-header .mob-menu-bar {
     padding: 15px 5%;
-    background: #056262;
+    background: #db137b;
     display: -webkit-flex;
     display: -moz-flex;
     display: -o-flex;
@@ -15021,7 +15021,7 @@ hr {
 }
 
 .header.mob-header .mob-top-menu ul li.active a {
-    color: #056262
+    color: #db137b
 }
 
 .header.mob-header .mob-top-menu ul.menu-slider .owl-prev,
@@ -15360,7 +15360,7 @@ hr {
         }
 
         to {
-            color: #056262
+            color: #db137b
         }
     }
 
@@ -15370,7 +15370,7 @@ hr {
         }
 
         to {
-            color: #056262
+            color: #db137b
         }
     }
 }
@@ -15391,7 +15391,7 @@ hr {
 }
 
 #footer .footer-container {
-    background: url("/assets/footer_bg.png") no-repeat #056262;
+    background: url("/assets/footer_bg.png") no-repeat #db137b;
     background-position: center center;
     padding: 50px 0;
     position: relative
@@ -15419,7 +15419,7 @@ hr {
 
 #footer .footer-container .left-curev-box,
 #footer .footer-container .right-curev-box {
-    background: #056262
+    background: #db137b
 }
 
 #footer .ft-top-box {
